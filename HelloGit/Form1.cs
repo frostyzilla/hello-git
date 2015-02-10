@@ -28,5 +28,10 @@ namespace HelloGit
             var x = rand.Next(1, 100);
             MessageBox.Show(x.ToString());
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
