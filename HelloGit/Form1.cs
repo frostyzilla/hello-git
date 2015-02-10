@@ -21,5 +21,12 @@ namespace HelloGit
         {
             this.Close();
         }
+
+        private void btnRandom_Click(object sender, EventArgs e)
+        {
+            Random rand = new Random();
+            var x = rand.Next(1, 100);
+            MessageBox.Show(x.ToString());
+        }
     }
 }

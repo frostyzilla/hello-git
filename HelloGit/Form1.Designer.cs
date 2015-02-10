@@ -30,6 +30,7 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.btnHelloWorld = new System.Windows.Forms.Button();
+            this.btnRandom = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -51,11 +52,22 @@
             this.btnHelloWorld.Text = "Hello World";
             this.btnHelloWorld.UseVisualStyleBackColor = true;
             // 
+            // btnRandom
+            // 
+            this.btnRandom.Location = new System.Drawing.Point(46, 128);
+            this.btnRandom.Name = "btnRandom";
+            this.btnRandom.Size = new System.Drawing.Size(75, 23);
+            this.btnRandom.TabIndex = 2;
+            this.btnRandom.Text = "Random";
+            this.btnRandom.UseVisualStyleBackColor = true;
+            this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(290, 275);
+            this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.btnHelloWorld);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
@@ -68,6 +80,7 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnHelloWorld;
+        private System.Windows.Forms.Button btnRandom;
     }
 }
 
